@@ -2,9 +2,7 @@ package xyz.abc.test;
 
 import com.google.common.primitives.Ints;
 
-import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * @author 秦江峰
