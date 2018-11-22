@@ -17,10 +17,10 @@ public class PluginTest {
 
     public static void main(String[] args) {
 
-        int a = 10;
-        int b = 11;
-        Exchange2VariableValue.exchange(a, b);
-        System.out.println("======================================");
+//        int a = 10;
+//        int b = 11;
+//        Exchange2VariableValue.exchange(a, b);
+//        System.out.println("======================================");
 //        int[] t = {13,12,11,10,9,8,7,6,5,4,3,2,1};
 //
 //        PokerService pokerService = new PokerService();
@@ -31,10 +31,11 @@ public class PluginTest {
 //        System.out.println("======================================");
 
         int[] t3 = {7, 12, 2, 19, 3, 2, 4, 9, 5, 2, 1, 10, 7};
+        int[] t4 = {3, 5, 4, 1, 2, 2, 4, 6};
         IOrderByBase order = new BubbleSort();
-        order.sortByDesc(t3);
+        order.sortByDesc(t4);
         System.out.println("======================================");
-        order.sortByAsc(t3);
+        order.sortByAsc(t4);
 
 
 //        pokerService.sort3();
