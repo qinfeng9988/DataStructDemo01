@@ -8,4 +8,8 @@ public interface IOrderByBase {
     void sortByAsc(int[] arrays);
 
     void sortByDesc(int[] arrays);
+
+    interface Commpare {
+        boolean compare(int val, int val2);
+    }
 }

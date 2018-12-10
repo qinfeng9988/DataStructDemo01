@@ -3,7 +3,9 @@ package xyz.abc.test;
 import lombok.AllArgsConstructor;
 import xyz.abc.test.orderby.BubbleSort;
 import xyz.abc.test.orderby.IOrderByBase;
+import xyz.abc.test.orderby.InsertSort;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +18,7 @@ public class PluginTest {
 
 
     public static void main(String[] args) {
-
+        BigInteger i = new BigInteger("1542873462693");
 //        int a = 10;
 //        int b = 11;
 //        Exchange2VariableValue.exchange(a, b);
@@ -32,10 +34,18 @@ public class PluginTest {
 
         int[] t3 = {7, 12, 2, 19, 3, 2, 4, 9, 5, 2, 1, 10, 7};
         int[] t4 = {3, 5, 4, 1, 2, 2, 4, 6};
-        IOrderByBase order = new BubbleSort();
-        order.sortByDesc(t4);
+        //插入排序
+        InsertSort sort = new InsertSort();
+        sort.sortByAsc(t4);
         System.out.println("======================================");
-        order.sortByAsc(t4);
+        sort.sortByDesc(t4);
+
+
+//冒泡排序
+//        IOrderByBase order = new BubbleSort();
+//        order.sortByDesc(t4);
+//        System.out.println("======================================");
+//        order.sortByAsc(t4);
 
 
 //        pokerService.sort3();

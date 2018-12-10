@@ -82,7 +82,5 @@ public class BubbleSort implements IOrderByBase {
     }
 
 
-    interface Commpare {
-        boolean compare(int val, int val2);
-    }
+
 }
