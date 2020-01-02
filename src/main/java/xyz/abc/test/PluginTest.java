@@ -1,17 +1,6 @@
 package xyz.abc.test;
 
-import com.google.common.primitives.Ints;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import xyz.abc.test.orderby.BubbleSort;
-import xyz.abc.test.orderby.IOrderByBase;
-import xyz.abc.test.orderby.InsertSort;
-
-import java.math.BigInteger;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import xyz.abc.test.model.TreeNode;
 
 /**
  * @author 秦江峰
@@ -21,7 +10,20 @@ public class PluginTest {
 
 
     public static void main(String[] args) {
+        TreeNode treeNode5 = new TreeNode(5);
+        TreeNode treeNode4 = new TreeNode(treeNode5,null,4);
+        TreeNode treeNode3 = new TreeNode(treeNode4,null,3);
+        TreeNode treeNode2 = new TreeNode(treeNode3,null,2);
+        TreeNode treeNode1 = new TreeNode(treeNode2,null,1);
 
+//        TreeNode myTreeNode = new TreeNode(
+//            new TreeNode(
+//                    2),new TreeNode(3),1
+//        );
+
+        TreeTilt treeTilt = new TreeTilt();
+        int t = treeTilt.tilt(treeNode1);
+        System.out.println(t);
 
 //        BigInteger i = new BigInteger("1542873462693");
 ////        int a = 10;

@@ -1,4 +1,6 @@
-package xyz.abc.test.LinkTable;
+package xyz.abc.test.LinkTable.doubleLink;
+
+import xyz.abc.test.LinkTable.single.ILinkNext;
 
 /**
  * @author 秦江峰

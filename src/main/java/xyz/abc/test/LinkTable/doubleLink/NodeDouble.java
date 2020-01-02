@@ -1,4 +1,4 @@
-package xyz.abc.test.LinkTable;
+package xyz.abc.test.LinkTable.doubleLink;
 
 import lombok.*;
 
@@ -12,7 +12,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class NodeDouble implements Cloneable,IDoubleLink<NodeDouble> {
+public class NodeDouble implements Cloneable, IDoubleLink<NodeDouble> {
     private NodeDouble next;
     private NodeDouble prev;
     private String name;

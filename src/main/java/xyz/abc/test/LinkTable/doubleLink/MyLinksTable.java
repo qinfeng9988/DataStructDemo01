@@ -1,4 +1,4 @@
-package xyz.abc.test.LinkTable;
+package xyz.abc.test.LinkTable.doubleLink;
 
 /**
  * @author 秦江峰

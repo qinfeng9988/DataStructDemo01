@@ -1,5 +1,10 @@
 package xyz.abc.test.LinkTable;
 
+import xyz.abc.test.LinkTable.doubleLink.MyLinksTable;
+import xyz.abc.test.LinkTable.doubleLink.NodeDouble;
+import xyz.abc.test.LinkTable.single.NodeSingle;
+import xyz.abc.test.LinkTable.single.SingleLink;
+
 /**
  * @author 秦江峰
  * @date 2018/11/13 13:49
@@ -7,7 +12,18 @@ package xyz.abc.test.LinkTable;
 public class LinkTableMain {
 
     public static void main(String[] args) throws CloneNotSupportedException {
+        SingleLink<NodeSingle> s = singleLink();
+        NodeSingle single = s.getD();
+        while(single!=null){
+            System.out.println(single.getName());
+            single = single.getNext();
+        }
+        System.out.println(s.contain(new NodeSingle(null,6)));
+        System.out.println(s.get(8).toString());
+        System.out.println("over");
+    }
 
+    static void testDoubuleLink() {
         MyLinksTable<NodeDouble> linkLinksTable = new MyLinksTable<>(new NodeDouble("link22"));
         linkLinksTable.addFrist(new NodeDouble("link11"));
 
@@ -41,5 +57,18 @@ public class LinkTableMain {
 //
 //        NodeDouble link = link1.clone();
         System.out.println("over");
+
+
+
+    }
+
+    static void testSingleLink() {
+
+    }
+
+    private static SingleLink<NodeSingle> singleLink() {
+//        NodeSingle nodeSingle= new No
+        NodeSingle nodeSingle = new NodeSingle(new NodeSingle(new NodeSingle(new NodeSingle(new NodeSingle(new NodeSingle(new NodeSingle(new NodeSingle(null,8),7),6),5),4),3),2),1);
+        return new SingleLink<>(nodeSingle);
     }
 }
