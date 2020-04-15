@@ -1,7 +1,4 @@
-package com.qjfcc.design.proxydesign.proxy;
-
-import com.qjfcc.design.proxydesign.impl.IHouse;
-import com.qjfcc.design.proxydesign.impl.ShangHaiHouse;
+package com.qjfcc.design.proxy;
 
 /**
  * @author 秦江峰

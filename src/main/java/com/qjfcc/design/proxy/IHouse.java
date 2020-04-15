@@ -1,4 +1,4 @@
-package com.qjfcc.design.proxydesign.impl;
+package com.qjfcc.design.proxy;
 
 /**
  * @author 秦江峰

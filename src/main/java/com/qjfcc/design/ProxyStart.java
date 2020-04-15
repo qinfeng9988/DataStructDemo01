@@ -1,7 +1,7 @@
-package com.qjfcc.design.proxydesign;
+package com.qjfcc.design;
 
-import com.qjfcc.design.proxydesign.proxy.BeijiangHouseProxy;
-import com.qjfcc.design.proxydesign.proxy.ShanghaiHouseProxy;
+import com.qjfcc.design.proxy.BeijiangHouseProxy;
+import com.qjfcc.design.proxy.ShanghaiHouseProxy;
 
 /**
  * @author 秦江峰
