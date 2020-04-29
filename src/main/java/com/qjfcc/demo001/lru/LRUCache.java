@@ -27,7 +27,7 @@ public class LRUCache {
 
     public void put(int key, int value) {
         cache.put(key, new CacheNode(key, value));
-        this.current++;
+        this.current++; 
         if (this.current > this.count) {
             //删除
         }
