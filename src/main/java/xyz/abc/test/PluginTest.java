@@ -10,22 +10,11 @@ public class PluginTest {
 
 
     public static void main(String[] args) {
-
-        StringBuilder stringBuilder = new StringBuilder();
-
-        String a = "a" + "b";
-        System.out.println(a.getBytes());
-
-        a.intern();
-
-        System.out.println("ab" == a);
-
-        StringBuffer stringBuffer = new StringBuffer();
         TreeNode treeNode5 = new TreeNode(5);
-        TreeNode treeNode4 = new TreeNode(treeNode5, null, 4);
-        TreeNode treeNode3 = new TreeNode(treeNode4, null, 3);
-        TreeNode treeNode2 = new TreeNode(treeNode3, null, 2);
-        TreeNode treeNode1 = new TreeNode(treeNode2, null, 1);
+        TreeNode treeNode4 = new TreeNode(treeNode5,null,4);
+        TreeNode treeNode3 = new TreeNode(treeNode4,null,3);
+        TreeNode treeNode2 = new TreeNode(treeNode3,null,2);
+        TreeNode treeNode1 = new TreeNode(treeNode2,null,1);
 
 //        TreeNode myTreeNode = new TreeNode(
 //            new TreeNode(
