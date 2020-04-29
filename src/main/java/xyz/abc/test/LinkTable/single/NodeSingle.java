@@ -1,8 +1,10 @@
 package xyz.abc.test.LinkTable.single;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode()
 public class NodeSingle implements Cloneable, ILinkNext<NodeSingle> {
 
     private NodeSingle next;
@@ -24,7 +26,7 @@ public class NodeSingle implements Cloneable, ILinkNext<NodeSingle> {
 
     @Override
     public boolean equals(Object x) {
-        if(x == null){
+        if (x == null) {
             return false;
         }
         NodeSingle n = (NodeSingle) x;
