@@ -19,7 +19,7 @@ public class PokerService {
      */
     void sort(int[] pokers) {
         //从数组转换成list,只是为了方便操作，不用考虑其它的
-        LinkedList<Integer> pokerList = new LinkedList<>(Ints.asList(pokers));
+        LinkedList<Integer> pokerList = new LinkedList<Integer>(Ints.asList(pokers));
         //声明一个目标容器，理解成手
         LinkedList<Integer> newPokers2 = new LinkedList<>();
         for (Integer aPokerList : pokerList) {
