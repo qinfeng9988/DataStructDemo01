@@ -1,4 +1,4 @@
-package xyz.abc.test;
+package xyz.abc.test.LinkTable;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
