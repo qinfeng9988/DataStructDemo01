@@ -1,7 +1,7 @@
 package com.qjfcc.test;
 
 import org.junit.Test;
-import xyz.abc.test.LinkTable.ResponseDto;
+import xyz.abc.test.ResponseDto;
 
 import java.util.Collections;
 import java.util.Optional;
