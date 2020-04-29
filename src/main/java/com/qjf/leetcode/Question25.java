@@ -3,6 +3,8 @@ package com.qjf.leetcode;
 import com.qjf.leetcode.Model.ListNode;
 import javafx.util.Pair;
 
+import java.util.Arrays;
+
 /**
  * @author 秦江峰
  * https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/tu-jie-kge-yi-zu-fan-zhuan-lian-biao-by-user7208t/
@@ -11,7 +13,22 @@ import javafx.util.Pair;
  */
 public class Question25 {
 
+    public static int aMethod(int i)throws Exception
+    {
+        try{
+            return i / 10;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("exception in a Method");
+        } finally{
+            System.out.printf("finally");
+        }
+    }
+
+
     public static void main(String[] args) {
+
         ListNode listNode5 = new ListNode(5, 5);
         ListNode listNode4 = new ListNode(4, 4);
         ListNode listNode3 = new ListNode(3, 3);
@@ -27,9 +44,54 @@ public class Question25 {
             System.out.println(listNode.val);
             listNode = listNode.next;
         }
+
+        int[] ii = new int[3];
+        ii[0] = 1;
+        ii[1] = 3;
+        ii[2] = 5;
+
+        int[] ii2 = new int[3];
+        ii2[0] = 2;
+        ii2[1] = 4;
+        ii2[2] = 6;
+        merge(ii,ii2);
     }
 
-
+    public static int[] merge(int[] a, int[] b) {
+        int[] aa,bb;
+        int length = a.length + b.length;
+        if(a.length == 0){
+            return b;
+        }
+        if(b.length == 0){
+            return a;
+        }
+        int[] newArray = new int[length];
+        int r;
+        if(a[0]<b[0]){
+            r  = a[0];
+            if(a.length>1) {
+                aa = Arrays.copyOfRange(a, 1, a.length - 1);
+            }else {
+                aa = new int[0];
+            }
+            bb = b;
+        }else{
+            r  = b[0];
+            if(a.length>1) {
+                bb = Arrays.copyOfRange(b, 1, b.length - 1);
+            }else {
+                bb = new int[0];
+            }
+            aa = a;
+        }
+        newArray[0] = r;
+        int[] a2 = merge(aa,bb);
+        for(int i =1;i<length-1;i++){
+            newArray[i] = a2[i-1];
+        }
+        return newArray;
+    }
     /**
      * 方法二 符合要求，时间复杂度O(n * k),空间复杂度 O（1）
      * @param head

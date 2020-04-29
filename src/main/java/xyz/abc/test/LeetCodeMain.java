@@ -6,12 +6,29 @@ package xyz.abc.test;
  */
 public class LeetCodeMain {
 
-    public static void main(String[] args) {
-        int[][] integers = new int[][]{{1, 2, 10}, {2, 3, 20}, {2, 5, 25}};
-        corpFlightBookings(
-                integers, 5
+    static class Parent {
 
-        );
+        static {
+            A = 2;
+        }
+
+        public static int A = 1;
+    }
+
+    static class Sub extends Parent {
+        public static int B = A;
+    }
+
+
+    public static void main(String[] args) {
+
+        System.out.println(Sub.A);
+
+//        int[][] integers = new int[][]{{1, 2, 10}, {2, 3, 20}, {2, 5, 25}};
+//        corpFlightBookings(
+//                integers, 5
+//
+//        );
 
     }
 
@@ -27,4 +44,6 @@ public class LeetCodeMain {
         }
         return r;
     }
+
+
 }
